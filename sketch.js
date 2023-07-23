@@ -6,8 +6,12 @@
 // They will help you while writing code.
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	// setup runs once
+	const canvas = createCanvas(100, 100);
+	canvas.parent("sketch")
 	background(128);
 }
 
-function draw() {}
+function draw() {
+	// draw runs all the time
+}
