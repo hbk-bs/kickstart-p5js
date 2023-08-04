@@ -3,6 +3,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	/* remove default padding */
+	padding: 0; 
+	/* remove default margins */
+	margin: 0 auto; 
 }
 body > div {
 	align-self: center;
