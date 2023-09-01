@@ -2,13 +2,13 @@
 /// <reference path="./node_modules/@types/p5/global.d.ts" />
 /// <reference path="./node_modules/@types/p5/literals.d.ts" />
 /// <reference path="./node_modules/@types/p5/constants.d.ts" />
-// Keep these comments alive.
-// They will help you while writing code.
+// @ts-check
+// Keep these comments above alive. They will help you while writing code.
 
 function setup() {
 	// setup runs once
 	const canvas = createCanvas(100, 100);
-	canvas.parent("sketch")
+	canvas.parent("sketch");
 	background(128);
 }
 

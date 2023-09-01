@@ -4,7 +4,8 @@
 	"description": "Basic p5.js project to hit the ground running for hbk-bs",
 	"main": "sketch.js",
 	"scripts": {
-		"prettier": "prettier . --write"
+		"prettier": "prettier . --write",
+		"eslint": "eslint --fix ./*.js"
 	},
 	"keywords": [
 		"p5js"
@@ -12,8 +13,55 @@
 	"author": "Fabian Morón Zirfas ff6347",
 	"license": "MIT",
 	"devDependencies": {
+		"@fal-works/eslint-config-p5js": "1.0.3",
 		"@types/p5": "1.6.2",
+		"eslint": "8.48.0",
 		"prettier": "3.0.0"
+	},
+	"eslintConfig": {
+		"env": {
+			"browser": true,
+			"es2021": true
+		},
+		"extends": [
+			"eslint:recommended",
+			"@fal-works/p5js"
+		],
+		"overrides": [
+			{
+				"env": {
+					"node": true
+				},
+				"files": [
+					".eslintrc.{js,cjs}"
+				],
+				"parserOptions": {
+					"sourceType": "script"
+				}
+			}
+		],
+		"parserOptions": {
+			"ecmaVersion": "latest",
+			"sourceType": "module"
+		},
+		"rules": {
+			"indent": [
+				"error",
+				"tab"
+			],
+			"linebreak-style": [
+				"error",
+				"unix"
+			],
+			"quotes": [
+				"error",
+				"double"
+			],
+			"semi": [
+				"error",
+				"always"
+			]
+		}
 	},
 	"prettier": {
 		"useTabs": true,
