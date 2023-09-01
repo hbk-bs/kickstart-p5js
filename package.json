@@ -16,6 +16,7 @@
 		"@fal-works/eslint-config-p5js": "1.0.3",
 		"@types/p5": "1.6.2",
 		"eslint": "8.48.0",
+		"eslint-config-prettier": "^9.0.0",
 		"prettier": "3.0.0"
 	},
 	"eslintConfig": {
@@ -25,7 +26,8 @@
 		},
 		"extends": [
 			"eslint:recommended",
-			"@fal-works/p5js"
+			"@fal-works/p5js",
+			"prettier"
 		],
 		"overrides": [
 			{
