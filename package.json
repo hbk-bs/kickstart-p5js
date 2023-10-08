@@ -5,7 +5,8 @@
 	"main": "sketch.js",
 	"scripts": {
 		"prettier": "prettier . --write",
-		"eslint": "eslint --fix ./*.js"
+		"eslint": "eslint --fix ./*.js",
+		"dev": "reload -p 8080"
 	},
 	"keywords": [
 		"p5js"
@@ -17,7 +18,8 @@
 		"@types/p5": "^1.7.0",
 		"eslint": "8.48.0",
 		"eslint-config-prettier": "^9.0.0",
-		"prettier": "3.0.0"
+		"prettier": "3.0.0",
+		"reload": "3.2.1"
 	},
 	"eslintConfig": {
 		"env": {
