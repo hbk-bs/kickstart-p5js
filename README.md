@@ -19,7 +19,7 @@ p5.js is a JavaScript library for creative coding, with a focus on making coding
 - Has the canvas centered in the page using CSS Flexbox
 - Uses local version of p5.js in node_modules/ but also has link to CDN in `index.html`
 
-## Usage
+## Usage Locally
 
 - Clone the repo `git clone git@github.com:hbk-bs/kickstart-p5js.git <YOUR NEW PROJECT NAME> && cd <YOUR NEW PROJECT NAME>`
 - Or `degit` it `mkdir <YOUR NEW PROJECT NAME> && cd <YOUR NEW PROJECT NAME> && npx degit hbk-bs/kickstart-p5js`
@@ -27,3 +27,9 @@ p5.js is a JavaScript library for creative coding, with a focus on making coding
 - Use the defined Node.js version `nvm install`
 - Install the used modules `npm ci`
 - Start your dev server `npm run dev`
+- Edit `sketch.js`, `index.html` or `style.css`
+
+## Usage in Repl.it
+
+- Just create a copy (or fork) of the repl and run it
+- Edit `sketch.js`, `index.html` or `style.css`
