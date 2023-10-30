@@ -8,6 +8,3 @@ body {
 	/* remove default margins */
 	margin: 0 auto;
 }
-body > div {
-	align-self: center;
-}
